@@ -1,0 +1,11 @@
+<h1> <%=@blogger.name%> </h1>
+
+<% @blogger.posts.each do |post| %>
+    <% post.likes += @likes %>
+    <% end %>
+
+<h2>Total Likes: <%= @likes %> </h2>
+
+    
+
+<h2> Features Post: <%= @sorted.first.title %> </h2>
